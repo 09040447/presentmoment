@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>在當下 Present Moment</title>
+
+<style>
+:root{
+    --orange:#f9b878;
+    --coral:#fe8c7e;
+    --yellow:#f3dd73;
+
+    --pink:#ff7cc9;
+    --purple:#d27ef6;
+    --lightpink:#ffc6f1;
+    --lightpurple:#f6c5ff;
+
+    --blue:#77b0f6;
+    --lightblue:#c2e2ff;
+    --green:#a4f272;
+
+    --gray:#ececec;
+    --text:#4b5563;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Noto Sans TC",sans-serif;
+    background:#fafcff;
+    color:var(--text);
+    line-height:1.8;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:999;
+    background:rgba(255,255,255,0.9);
+    backdrop-filter:blur(12px);
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:40px;
+    padding:18px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#555;
+    font-weight:600;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 20px 60px;
+    background:linear-gradient(
+        135deg,
+        var(--lightblue),
+        #ffffff,
+        var(--lightpink)
+    );
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#444;
+    margin-bottom:20px;
+}
+
+.hero h2{
+    font-size:1.4rem;
+    font-weight:400;
+    color:#666;
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:1.1rem;
+}
+
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:2.4rem;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#777;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:24px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.problem{
+    background:#fff;
+}
+
+.problem-item{
+    margin-bottom:30px;
+    padding:25px;
+    border-left:6px solid var(--coral);
+    background:#fff;
+    border-radius:12px;
+}
+
+.color-palette{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    gap:20px;
+}
+
+.color{
+    text-align:center;
+}
+
+.color-box{
+    height:100px;
+    border-radius:18px;
+    margin-bottom:10px;
+}
+
+.feature{
+    background:white;
+    padding:30px;
+    border-radius:24px;
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+.feature h3{
+    margin-bottom:15px;
+    color:#444;
+}
+
+.feature p{
+    margin-bottom:10px;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:30px;
+}
+
+footer{
+    text-align:center;
+    padding:60px 20px;
+    background:#f8f8f8;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#about">產品理念</a></li>
+        <li><a href="#issue">關心議題</a></li>
+        <li><a href="#users">適用族群</a></li>
+        <li><a href="#colors">色彩風格</a></li>
+        <li><a href="#features">產品特色</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>PRESENT MOMENT</h1>
+        <h2>在當下</h2>
+
+        <p>
+            透過拍照、色彩與文字記錄，
+            陪伴使用者回到此時此刻，
+            看見自己的情緒與生活軌跡。
+        </p>
+    </div>
+</section>
+
+<section id="about">
+    <div class="section-title">
+        <h2>產品理念</h2>
+        <p>讓日常被看見，讓情緒被接住</p>
+    </div>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>從自動導航回到此時此地</h3>
+            <p>
+                現代人常處於忙碌與分心狀態。
+                在當下 APP 透過拍照行為，
+                讓使用者暫停腳步，
+                將注意力重新帶回當下。
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>情緒具象化</h3>
+            <p>
+                使用色彩與文字表達感受，
+                將抽象情緒轉化為具體紀錄，
+                並透過溫柔的 AI 回饋，
+                陪伴使用者理解自己。
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>有溫度的生活收集</h3>
+            <p>
+                透過照片、貼紙與個人化設計，
+                將每一次紀錄變成珍貴回憶，
+                建立持續自我照顧的習慣。
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="issue" class="problem">
+    <div class="section-title">
+        <h2>關心議題</h2>
+    </div>
+
+    <div class="problem-item">
+        現代人長期處於注意力碎片化與自動導航狀態，
+        容易產生焦慮與反芻思考。
+    </div>
+
+    <div class="problem-item">
+        許多人缺乏情緒辨識能力，
+        面對負面情緒時容易自我批判。
+    </div>
+
+    <div class="problem-item">
+        心理諮商存在時間與資源門檻，
+        日常生活中缺乏輕量化心理支持。
+    </div>
+</section>
+
+<section id="users">
+    <div class="section-title">
+        <h2>適用族群</h2>
+    </div>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>大學生與年輕世代</h3>
+            <p>
+                面臨課業、人際與未來焦慮，
+                經常處於高壓與超載狀態。
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>兒童與青少年</h3>
+            <p>
+                正處於身心發展轉換期，
+                需要更多情緒表達與整理工具。
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="colors">
+    <div class="section-title">
+        <h2>色彩風格</h2>
+        <p>以柔和低飽和色彩打造無壓力心理空間</p>
+    </div>
+
+    <div class="color-palette">
+
+        <div class="color">
+            <div class="color-box" style="background:#f9b878"></div>
+            #f9b878
+        </div>
+
+        <div class="color">
+            <div class="color-box" style="background:#fe8c7e"></div>
+            #fe8c7e
+        </div>
+
+        <div class="color">
+            <div class="color-box" style="background:#f3dd73"></div>
+            #f3dd73
+        </div>
+
+        <div class="color">
+            <div class="color-box" style="background:#ff7cc9"></div>
+            #ff7cc9
+        </div>
+
+        <div class="color">
+            <div class="color-box" style="background:#d27ef6"></div>
+            #d27ef6
+        </div>
+
+        <div class="color">
+            <div class="color-box" style="background:#77b0f6"></div>
+            #77b0f6
+        </div>
+
+        <div class="color">
+            <div class="color-box" style="background:#a4f272"></div>
+            #a4f272
+        </div>
+
+    </div>
+</section>
+
+<section id="features">
+    <div class="section-title">
+        <h2>產品功能與特色</h2>
+    </div>
+
+    <div class="feature-grid">
+
+        <div class="feature">
+            <h3>01 沉浸式回到當下</h3>
+            <p>開啟 App 即進入拍照模式。</p>
+            <p>透過拍照中斷反芻思考，重新聚焦當下。</p>
+        </div>
+
+        <div class="feature">
+            <h3>02 心情調色盤</h3>
+            <p>以色彩記錄情緒。</p>
+            <p>協助使用者辨識與標示感受。</p>
+        </div>
+
+        <div class="feature">
+            <h3>03 高自由度紀錄</h3>
+            <p>支援文字、照片與貼紙。</p>
+            <p>打造專屬於自己的情緒手帳。</p>
+        </div>
+
+        <div class="feature">
+            <h3>04 歷程回顧</h3>
+            <p>提供完整歷史紀錄。</p>
+            <p>看見情緒流動與成長軌跡。</p>
+        </div>
+
+        <div class="feature">
+            <h3>05 解鎖機制</h3>
+            <p>完成紀錄即可獲得印章。</p>
+            <p>集滿後解鎖專屬藝術作品。</p>
+        </div>
+
+        <div class="feature">
+            <h3>06 溫馨小行動</h3>
+            <p>AI 提供簡短可執行的日常練習。</p>
+            <p>幫助使用者重新與現實建立連結。</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <h3>PRESENT MOMENT</h3>
+    <p>在當下 · 數位科技應用於心理與諮商</p>
+</footer>
+
+</body>
+</html>
